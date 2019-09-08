@@ -86,6 +86,22 @@ public class FileController {
     }
 
     /**
+     * 在线显示文件
+     *
+     * @param id
+     * @return
+     */
+    @GetMapping("/file/view/{id}")
+    @ResponseBody
+    public ResponseEntity<Object> serveFileOnline2(@PathVariable String id) {
+
+       return serveFileOnline(id);
+
+    }
+
+
+
+    /**
      * 上传
      *
      * @param file
