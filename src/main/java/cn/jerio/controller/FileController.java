@@ -24,7 +24,7 @@ import java.util.Optional;
  */
 @CrossOrigin(origins = "*", maxAge = 3600) // 允许所有域名访问
 @Controller
-@RequestMapping("/file")
+//@RequestMapping("/file")
 public class FileController {
 
     @Autowired
